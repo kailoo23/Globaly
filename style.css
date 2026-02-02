@@ -1,0 +1,403 @@
+:root {
+    --accent: #15c0c7;
+    --dark: #122033;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', Arial, sans-serif;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.main-heading h3 {
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main-heading h2 {
+    font-weight: 700;
+}
+
+.btn-up {
+    position: fixed;
+    right: 18px;
+    bottom: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.top-panel {
+    background: #0f1b2b;
+    color: #cfd8e3;
+    font-size: 14px;
+}
+
+.top-panel .social a {
+    color: #cfd8e3;
+    transition: color 0.2s ease;
+}
+
+.top-panel .social a:hover {
+    color: var(--accent);
+}
+
+.search-box input {
+    max-width: 170px;
+}
+
+.search-box .btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 900;
+}
+
+.main-nav .nav {
+    flex-wrap: nowrap;
+}
+
+.nav-pills .nav-link {
+    color: #333;
+    border-radius: 0;
+    padding: 8px 10px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+.contact-top a {
+    color: #7a7a7a;
+}
+
+.text-accent {
+    color: var(--accent) !important;
+}
+
+.btn-accent {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+}
+
+.btn-accent:hover {
+    background: #e25a27;
+    color: #fff;
+}
+
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background: #000;
+}
+
+.hero .carousel-item img {
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.7));
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 720px;
+    width: 90%;
+}
+
+.hero h1 {
+    font-weight: 700;
+}
+
+.hero .btn {
+    margin-top: 12px;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+.section-heading h5 {
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.service-card .icon {
+    color: var(--accent);
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.services .srv-feat {
+    text-align: center;
+    padding: 26px 18px;
+    border-radius: 12px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.services .srv-feat:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.services .srv-feat .icons {
+    color: var(--accent);
+    margin-bottom: 14px;
+}
+
+.services .srv-feat h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.services .srv-feat p {
+    color: #666;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.case-section {
+    background: url('https://omokhtar407.github.io/Globaly/img/slider_2.jpg') center/cover no-repeat;
+    padding: 110px 0;
+    overflow: hidden;
+}
+
+.case-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 18, 32, 0.65);
+}
+
+.case-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.business-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.business-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.1);
+}
+
+.business-card .card-title {
+    font-weight: 600;
+}
+
+.stats {
+    position: relative;
+    background: url('https://omokhtar407.github.io/Globaly/img/slider_1.jpg') center/cover no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+
+.stats::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 16, 28, 0.7);
+}
+
+.stats .container {
+    position: relative;
+    z-index: 2;
+}
+
+.stats .main-heading h2,
+.stats .main-heading h3 {
+    color: #fff;
+}
+
+.stats .stat-box {
+    background: transparent;
+    border: none;
+    padding: 18px 10px;
+    box-shadow: none;
+}
+
+.stat-number {
+    display: grid;
+    place-items: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.stats .stat-box p {
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+.testi-card {
+    border: 1px solid #ebebeb;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.testi-card img {
+    object-fit: cover;
+    border: 4px solid #f3f3f3;
+}
+
+.testimonials .carousel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonials {
+    position: relative;
+}
+
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    opacity: 1;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.testimonials .carousel-control-prev-icon,
+.testimonials .carousel-control-next-icon {
+    filter: invert(25%);
+    background-color: transparent;
+}
+
+.testimonials .carousel-control-prev { left: -60px; }
+.testimonials .carousel-control-next { right: -60px; }
+
+@media (max-width: 991px) {
+    .testimonials .carousel-control-prev { left: -12px; }
+    .testimonials .carousel-control-next { right: -12px; }
+}
+
+.testi-card span {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.cta {
+    background: linear-gradient(120deg, #0f1b2b, #122844);
+}
+
+.contact-form {
+    border-radius: 12px;
+}
+
+footer {
+    background: #0f1b2b;
+}
+
+footer p {
+    color: #cfd8e3;
+}
+
+.fade-up {
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .contact-top {
+        text-align: left !important;
+    }
+}
